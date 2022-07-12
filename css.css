@@ -26,12 +26,14 @@
 body{
     font-family:"Noto Sans", sans-serif;
     background:#24C2B0;
+    height:100vh;
 }
 
 html{
 font-size:16px;
 }
 
+.redbar {background:var(--color4); height:22px;}
 
 section{
     max-width: 95%;
@@ -173,6 +175,18 @@ section div#next{
 }
 
 
+footer{
+    background: var(--color4);
+    color: white;
+    padding:10px 0px;
+    text-align: center;
+    font-size: 1.2rem;
+    position:absolute;
+    bottom:0px;
+    width:100%;
+
+}
+
 
 
 
@@ -224,7 +238,7 @@ section div#prev, section div#next{
         padding: 3px 1%;
     }
     section div#prev, section div#next {
-        top: 57%;
+        top: 60%;
     }
 }
 
@@ -235,6 +249,12 @@ section div#prev, section div#next{
     section div#prev, section div#next {
         top: 91%;
     }
+    footer{
+        position:static;
+        margin-top:20px;
+        padding:2px 0px;
+        font-size: 17px;
+      }
 }
 
 @media(max-width:340px){
@@ -310,7 +330,7 @@ section .slide_container .slide .slide, .slide > div button {
         height:95vh;
     }
     section div#prev, section div#next {
-        top: 91%;}
+        top: 97%;}
 }
 
 
@@ -321,6 +341,12 @@ section .slide_container .slide .slide, .slide > div button {
         background-color: rgba(0, 0, 0, 0.213);
        
     }
+    footer{
+        position:static;
+        margin-top:20px;
+        padding:2px 0px;
+        font-size: 17px;
+      }
 
 }
 
@@ -328,6 +354,7 @@ section .slide_container .slide .slide, .slide > div button {
     section .slide_container .slide .slide, .slide > div {
         padding: 0px 4px 6px 10px;
     }
+    footer{font-size:14px;}
 }
 
 
